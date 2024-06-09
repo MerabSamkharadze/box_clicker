@@ -7,7 +7,7 @@ for (let color of colors) {
   box.style.backgroundColor = color;
   box.classList.add("box");
   boxes.appendChild(box);
-  box.addEventListener("click", function () {
+  box.addEventListener("mouseover", function () {
     indicator.style.backgroundColor = box.style.backgroundColor;
   });
 }
