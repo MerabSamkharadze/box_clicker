@@ -8,6 +8,6 @@ for (let color of colors) {
   box.classList.add("box");
   boxes.appendChild(box);
   box.addEventListener("click", function () {
-    console.log(box.style.backgroundColor);
+    indicator.style.backgroundColor = box.style.backgroundColor;
   });
 }
