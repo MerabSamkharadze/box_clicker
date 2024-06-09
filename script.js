@@ -1,6 +1,15 @@
 const boxes = document.getElementById("boxes");
 const indicator = document.querySelector(".indicator");
-let colors = ["yellow", "green", "red", "purple", "violet", "indigo", "blue"];
+let colors = [
+  "yellow",
+  "green",
+  "red",
+  "purple",
+  "violet",
+  "indigo",
+  "blue",
+  "orange",
+];
 
 for (let color of colors) {
   let box = document.createElement("div");
