@@ -21,8 +21,11 @@ fetch("https://reqres.in/api/unknown", { method: "GET" })
       box.style.backgroundColor = color;
       box.classList.add("box");
       boxes.appendChild(box);
-      box.addEventListener("mouseover", function () {
+      box.addEventListener("click", function () {
         indicator.style.backgroundColor = box.style.backgroundColor;
       });
     }
+  })
+  .catch((error) => {
+    alert("server error!");
   });
