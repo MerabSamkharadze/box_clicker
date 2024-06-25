@@ -14,7 +14,6 @@ fetch("https://reqres.in/api/unknown", { method: "GET" })
     for (let obj of data) {
       colors.push(obj.color);
     }
-    console.log(colors);
 
     for (let color of colors) {
       let box = document.createElement("div");
@@ -29,3 +28,8 @@ fetch("https://reqres.in/api/unknown", { method: "GET" })
   .catch((error) => {
     alert("server error!");
   });
+
+let titu = ["cacu", "bocu", "incu", "cucu"];
+localStorage.setItem("myCat", JSON.stringify(titu));
+let arr = localStorage.getItem("myCat");
+console.log(typeof arr);
